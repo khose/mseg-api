@@ -57,7 +57,7 @@ setup(
     ],
     keywords="computer-vision robotics dataset-tools",
     packages=find_packages(exclude=["tests"]),
-    package_data={"mseg": ["dataset_lists/**/*"]},
+    package_data={"mseg": ["dataset_lists/**/*", "class_remapping_files/*", "relabeled_data/**/*"]},
     scripts=files_in_subdirs(path.join(here,'download_scripts'),"mseg_download_*.sh"),
     python_requires=">= 3.6",
     install_requires=[
