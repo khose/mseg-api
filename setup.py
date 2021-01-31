@@ -59,7 +59,6 @@ setup(
     packages=find_packages(exclude=["tests"]),
     package_data={"mseg": ["dataset_lists/**/*"]},
     scripts=files_in_subdirs(path.join(here,'download_scripts'),"mseg_download_*.sh"),
-    include_package_data=True,
     python_requires=">= 3.6",
     install_requires=[
         "imageio",
